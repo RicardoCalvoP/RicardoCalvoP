@@ -7,6 +7,7 @@
 - 📘 Always learning & experimenting with new frameworks, backend skills, and frontend design.
 
 ### 🛠️ Tech Stack
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -15,16 +16,11 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-### 📊 GitHub Stats
-
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=RicardoCalvoP&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" /> 
   
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=RicardoCalvoP&theme=tokyonight&hide_border=true" alt="GitHub Streak" /> 
 </div>
-
-
-
 
 ### 🙋 Get in Touch
 
