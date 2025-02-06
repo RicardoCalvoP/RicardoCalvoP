@@ -1,0 +1,69 @@
+---
+import "../styles/presentation.css";
+import Skills from "./skills.astro";
+
+export interface Skill {
+  name: string;
+  icon: string;
+}
+export interface Contact {
+  name: string;
+  link: string;
+}
+
+export interface Props {
+  name: string;
+  subtitle: string;
+  aboutMe: string;
+  img: string;
+  socials: Contact[];
+  contacts: Contact[];
+  skills: Skill[];
+}
+const { name, subtitle, aboutMe, img, socials, contacts, skills } = Astro.props;
+---
+
+<section class="presentation">
+  <div class="content">
+    <div class="text">
+      <h1>¡Hola, soy {name}!</h1>
+      <p>{subtitle}</p>
+      <p>{aboutMe}</p>
+      <Skills content={skills} />
+      <section class="socials">
+        <ul>
+          {
+            socials.map((social) => (
+              <li>
+                <button onclick={`window.location.href='${social.link}'`}>
+                  {social.name}
+                </button>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+      <section class="contacts">
+        <ul>
+          {
+            contacts.map((contact) => (
+              <li>
+                <button onclick={`window.location.href='${contact.link}'`}>
+                  {contact.name.includes("@") ? (
+                    <i class="fas fa-envelope" />
+                  ) : (
+                    <i class="fas fa-phone" />
+                  )}
+                  {contact.name}
+                </button>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </div>
+    <div class="image">
+      <img src={img} alt={`Imagen de ${name}`} class="profile-img" />
+    </div>
+  </div>
+</section>

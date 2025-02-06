@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Presentation from "../components/presentation.astro";
+import ProjectsContainer from "../components/projects_container.astro";
+import { presentationData } from "../presentationData.ts";
+import { projectsData } from "../projectsData.ts";
+---
+
+<Layout title="Portfolio">
+	<Presentation {...presentationData} />
+	<ProjectsContainer projects={projectsData} />
+</Layout>

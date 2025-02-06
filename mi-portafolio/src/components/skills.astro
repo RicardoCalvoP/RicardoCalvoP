@@ -1,0 +1,24 @@
+---
+export interface Skill {
+  name: string;
+  icon: string;
+}
+
+export interface Props {
+  content: Skill[];
+}
+
+const { content } = Astro.props;
+---
+
+<section class="skills">
+  <ul>
+    {
+      content.map((skill) => (
+        <li>
+          <img src={skill.icon} alt={skill.name} />
+        </li>
+      ))
+    }
+  </ul>
+</section>

@@ -1,0 +1,134 @@
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  color: white;
+  height: 81.5vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text {
+  flex: 1;
+  text-align: left;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.socials {
+  margin-top: 2rem;
+}
+
+.socials ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.socials li {
+  margin: 0;
+}
+
+.socials button {
+  width: 7rem;
+  height: 2.5rem;
+  background: linear-gradient(to top right, #101010, #303030);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  background-size: 250% 100%;
+  background-position: left bottom;
+}
+
+.socials button:hover {
+  background-position: right top;
+  border: 1px solid purple;
+
+}
+
+.contacts {
+  margin: 2rem -0.3rem;
+
+
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.contacts li {
+  margin: 0;
+}
+
+.contacts button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.contacts button i {
+  margin-right: 0.5rem;
+}
+
+.contacts button:hover {
+  text-decoration: underline purple;
+  color: rgb(150, 0, 150);
+}
+
+.contacts button:hover i {
+  color: rgb(125, 0, 125);
+}
+
+.contacts i {
+  margin-right: 0.5rem;
+}
+
+
+.skills ul {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.skills li {
+  margin: 0;
+}
+
+.skills img {
+  width: 1.2rem;
+  height: 1.2rem;
+}

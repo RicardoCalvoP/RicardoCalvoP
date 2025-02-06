@@ -1,0 +1,26 @@
+---
+import Project from "./project.astro";
+import "../styles/projects_container.css";
+
+export interface Technologies {
+  name: string;
+  icon: string;
+}
+
+export interface Project {
+  name: string;
+  date: string;
+  description: string;
+  img: string;
+  technologies: Technologies[];
+}
+
+export interface Props {
+  projects: Project[];
+}
+const { projects } = Astro.props;
+---
+
+<section class="projects-container">
+  {projects.map((project) => <Project {...project} />)}
+</section>

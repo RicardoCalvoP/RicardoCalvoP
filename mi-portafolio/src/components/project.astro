@@ -1,0 +1,33 @@
+---
+import Skills from "./skills.astro";
+import "../styles/project.css";
+
+export interface Technologies {
+  name: string;
+  icon: string;
+}
+
+export interface Props {
+  name: string;
+  date: string;
+  description: string;
+  img: string;
+  technologies: Technologies[];
+}
+
+const { name, date, description, img, technologies } = Astro.props;
+---
+
+<section class="project">
+  <div class="project-content">
+    <div class="text">
+      <h1>{name}</h1>
+      <p>{date}</p>
+      <Skills content={technologies} />
+      <p>{description}</p>
+    </div>
+    <div class="img">
+      <img src={img} alt={name} />
+    </div>
+  </div>
+</section>
