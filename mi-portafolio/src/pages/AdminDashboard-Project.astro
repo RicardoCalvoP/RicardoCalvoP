@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Proyecto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@400&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(to top right, #101010, #363636);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 2rem;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .header h1 {
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 2.5rem;
+      }
+      .project-description {
+        text-align: justify;
+        line-height: 1.6;
+      }
+      .image {
+        text-align: center;
+        margin: 2rem 0;
+      }
+      .image img {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+      }
+      .technologies {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .technologies h2 {
+        margin-bottom: 1rem;
+      }
+      .technologies ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .technologies li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .technologies img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease;
+      }
+      .technologies img:hover {
+        transform: scale(1.1);
+      }
+      .technologies span {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 3rem;
+      }
+      button {
+        background: #303030;
+        color: white;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: 1rem;
+      }
+      button:hover {
+        background: #505050;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Admin Dashboard</h1>
+        <p>
+          Una plataforma administrativa eficiente y segura para la gestión de
+          usuarios, donaciones y empleados.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="../assets/project1.png" alt="Admin Dashboard" />
+      </div>
+
+      <div class="project-description">
+        <h2>Sobre el Proyecto</h2>
+        <p>
+          Admin Dashboard es una aplicación web diseñada para gestionar datos de
+          usuarios, donaciones y empleados mediante una interfaz intuitiva y
+          moderna. Utiliza <strong>React Admin</strong> para la construcción del
+          frontend y <strong>Node.js</strong> con <strong>Express</strong> para el
+          backend. La información se almacena en una base de datos <strong
+            >MongoDB</strong
+          >, garantizando escalabilidad y rendimiento óptimo.
+        </p>
+        <h2>Solución Implementada</h2>
+        <p>
+          Se implementó un sistema de control de acceso basado en roles (RBAC),
+          donde los administradores pueden gestionar toda la plataforma,
+          mientras que los usuarios generales pueden realizar donaciones de
+          forma segura. Además, se integró autenticación con <strong
+            >JSON Web Tokens (JWT)</strong
+          > para mayor seguridad.
+        </p>
+        <p>
+          La plataforma también cuenta con visualización de datos en tiempo
+          real, operaciones CRUD eficientes y una experiencia de usuario fluida.
+          Todo esto optimizado para garantizar una gestión rápida y sencilla de
+          los recursos.
+        </p>
+      </div>
+
+      <section class="technologies">
+        <h2>Tecnologías Utilizadas</h2>
+        <ul>
+          <li>
+            <img src="https://cdn.simpleicons.org/react" alt="React" /><span
+              >React</span>
+          </li>
+          <li>
+            <img
+              src="https://cdn.simpleicons.org/typescript"
+              alt="TypeScript"
+            /><span>TypeScript</span>
+          </li>
+          <li>
+            <img
+              src="https://cdn.simpleicons.org/nodedotjs"
+              alt="Node.js"
+            /><span>Node.js</span>
+          </li>
+          <li>
+            <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB" /><span
+              >MongoDB</span>
+          </li>
+          <li>
+            <img src="https://cdn.simpleicons.org/express" alt="Express" /><span
+              >Express</span>
+          </li>
+          <li>
+            <img
+              src="https://cdn.simpleicons.org/jsonwebtokens"
+              alt="JWT"
+            /><span>JWT</span>
+          </li>
+        </ul>
+      </section>
+
+      <div class="footer">
+        <button onclick="window.location.href='/'">Volver al Inicio</button>
+      </div>
+    </div>
+  </body>
+</html>

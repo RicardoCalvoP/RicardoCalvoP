@@ -13,21 +13,24 @@ export interface Props {
   description: string;
   img: string;
   technologies: Technologies[];
+  page: string;
 }
 
-const { name, date, description, img, technologies } = Astro.props;
+const { name, date, description, img, technologies, page } = Astro.props;
 ---
 
-<section class="project">
-  <div class="project-content">
-    <div class="text">
-      <h1>{name}</h1>
-      <p>{date}</p>
-      <Skills content={technologies} />
-      <p>{description}</p>
+<a href={page} class="project-link">
+  <section class="project">
+    <div class="project-content">
+      <div class="text">
+        <h1>{name}</h1>
+        <p>{date}</p>
+        <Skills content={technologies} />
+        <p>{description}</p>
+      </div>
+      <div class="img">
+        <img src={img} alt={name} />
+      </div>
     </div>
-    <div class="img">
-      <img src={img} alt={name} />
-    </div>
-  </div>
-</section>
+  </section>
+</a>

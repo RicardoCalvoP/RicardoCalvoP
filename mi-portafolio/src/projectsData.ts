@@ -2,6 +2,7 @@ const img1 = "../assets/laptop.png";
 const img2 = "../assets/pc.png";
 const img3 = "../assets/canva.png";
 const imgProject1 = "../assets/project1.png";
+const project1 = "/AdminDashboard-Project";
 
 export const projectsData = [
   {
@@ -22,6 +23,7 @@ export const projectsData = [
       { name: "WebGL", icon: "https://cdn.simpleicons.org/webgl" },
       { name: "Blender", icon: "https://cdn.simpleicons.org/blender" },
     ],
+    page: project1,
   },
   {
     name: "Admin Dashboard",
@@ -41,6 +43,8 @@ export const projectsData = [
       { name: "Express", icon: "https://cdn.simpleicons.org/express" },
       { name: "JWT", icon: "https://cdn.simpleicons.org/jsonwebtokens" },
     ],
+    page: project1,
+
   },
   {
     name: "Admin Dashboard",
@@ -60,5 +64,7 @@ export const projectsData = [
       { name: "Express", icon: "https://cdn.simpleicons.org/express" },
       { name: "JWT", icon: "https://cdn.simpleicons.org/jsonwebtokens" },
     ],
+    page: project1,
+
   },
 ];
