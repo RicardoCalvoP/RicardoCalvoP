@@ -1,3 +1,7 @@
+.project-link {
+  text-decoration: none;
+}
+
 .project {
   width: 100%;
   max-width: 75rem;
