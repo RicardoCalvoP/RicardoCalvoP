@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer components {
+
+  /* =========================
+     Layout base
+     ========================= */
+  .section-container {
+    @apply mx-auto flex max-w-6xl flex-col gap-10 px-6 py-16;
+  }
+
+  .title {
+    @apply text-4xl font-bold tracking-tight sm:text-5xl;
+  }
+
+  .main-description {
+    @apply text-base leading-7 text-neutral-300 sm:text-lg;
+  }
+
+  .sub-heading {
+    @apply text-sm uppercase tracking-[0.2em] text-neutral-400;
+  }
+
+  .sub-title {
+    @apply flex-1 text-center text-5xl font-bold text-neutral-100;
+  }
+
+  .projects-container {
+    @apply grid w-3/4 gap-6 md:grid-cols-1;
+  }
+
+  .project-card {
+    @apply rounded-2xl border border-neutral-500 bg-neutral-900 p-6;
+  }
+
+  /* =========================
+     Stack / Infinite marquee
+     ========================= */
+
+  /*
+    Main wrapper:
+    - hides overflow
+    - applies side fade so icons appear/disappear smoothly
+  */
+  .stack-container {
+    @apply relative w-full overflow-hidden;
+
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%);
+
+    mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%);
+  }
+
+  /*
+    Moving track:
+    - width grows to fit content
+    - keeps icons in one line
+    - linear infinite motion for seamless scrolling
+  */
+  .stack-track {
+    @apply flex w-max items-center gap-8;
+    animation: stack-scroll 16s linear infinite;
+  }
+
+  /*
+    Each icon item:
+    - fixed square size
+    - does not shrink
+    - centers the icon
+  */
+  .stack-item {
+    @apply flex h-16 w-16 shrink-0 items-center justify-center;
+  }
+
+  /*
+    Makes SVG fill the item box cleanly
+  */
+  .stack-item svg {
+    @apply block h-full w-full;
+  }
+}
+
+/* =========================
+   Stack animation
+   ========================= */
+
+/*
+  The track contains duplicated content.
+  Moving it by half its total width creates the infinite loop effect.
+*/
+@keyframes stack-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
