@@ -6,23 +6,23 @@
      Layout base
      ========================= */
   .section-container {
-    @apply mx-auto flex max-w-6xl flex-col gap-10 px-6 py-16;
+    @apply mx-auto min-h-screen max-w-fit flex flex-col gap-10 px-6 py-16;
   }
 
   .title {
-    @apply text-4xl font-bold tracking-tight sm:text-5xl;
+    @apply text-4xl font-bold tracking-tight sm:text-5xl 2xl:text-8xl;
   }
 
   .main-description {
-    @apply text-base leading-7 text-neutral-300 sm:text-lg;
+    @apply text-base leading-7 text-neutral-300 sm:text-lg 2xl:text-2xl 2xl:leading-8 max-w-4xl;
   }
 
   .sub-heading {
-    @apply text-sm uppercase tracking-[0.2em] text-neutral-400;
+    @apply text-sm uppercase tracking-[0.2em] text-neutral-400 2xl:text-3xl;
   }
 
   .sub-title {
-    @apply flex-1 text-center text-5xl font-bold text-neutral-100;
+    @apply flex-1 text-center text-5xl font-bold text-neutral-100 2xl:text-8xl;
   }
 
   .projects-container {
