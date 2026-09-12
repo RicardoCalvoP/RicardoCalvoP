@@ -16,20 +16,14 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RicardoCalvoP&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" /> 
-  
+<div align="center">  
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=RicardoCalvoP&theme=tokyonight&hide_border=true" alt="GitHub Streak" /> 
 </div>
 
 ### 🙋 Get in Touch
 
-  - **Email**: [calvor310@gmail.com](calvor310@gmail.com)  
-  -  **GitHub**: [https://github.com/RicardoCalvoP](https://github.com/RicardoCalvoP)
-<div align="right">
-  <img src="https://komarev.com/ghpvc/?username=RicardoCalvoP&color=7AA2F7" alt="Visitor Count" />
-</div>
+  - **Email**: [r.calvoperez@outlook.com](r.calvoperez@outlook.com)
+  - **LinkedIn**: [Ricardo Calvo](www.linkedin.com/in/ricardo-calvo-95b82a234)
+  -  **GitHub**: [RicardoCalvoP](https://github.com/RicardoCalvoP)
 
 ---
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=RicardoCalvoP&theme=tokyonight&hide_border=true&margin-w=15&row=1)
